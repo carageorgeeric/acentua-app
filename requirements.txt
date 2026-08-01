@@ -1,0 +1,7 @@
+# Dependencias de execucao do Acentua.
+# Instale com:  pip install -r requirements.txt
+# (ou, melhor ainda, use `pip install -e .` que le o pyproject.toml)
+
+pynput>=1.7.6       # atalho global de teclado e envio de teclas
+pystray>=0.19.4     # icone na bandeja do sistema
+Pillow>=10.0.0      # icones do tray e geracao dos .ico

@@ -1,0 +1,91 @@
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Empacotamento / build
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+sdist/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# Testes e cobertura
+.pytest_cache/
+.cache/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.tox/
+.nox/
+.hypothesis/
+
+# Ferramentas
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+dmypy.json
+
+# ---------------------------------------------------------------------------
+# Windows
+# ---------------------------------------------------------------------------
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.stackdump
+
+# ---------------------------------------------------------------------------
+# Editores
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---------------------------------------------------------------------------
+# Do proprio Acentua
+# ---------------------------------------------------------------------------
+# Preferencias e aprendizado locais do usuario: sao dados dele, nao do projeto.
+# A barra na frente prende a regra na raiz do repositorio, para nunca pegar
+# um arquivo de mesmo nome que faca parte do pacote.
+/preferencias.json
+/aprendizado.json
+*.log
+
+# ---------------------------------------------------------------------------
+# ATENCAO ao editar este arquivo
+# ---------------------------------------------------------------------------
+# NAO adicione `*.gz`, `*.json`, `*.ico` nem `*.png`.
+# `src/corretor/dados/dicionario.json.gz` e os icones PRECISAM ir para o
+# repositorio: sem eles, quem clona instala e o app quebra na primeira execucao.
+#
+# Verificacao (nao deve imprimir nada):
+#   git check-ignore -v src/corretor/dados/dicionario.json.gz
+
+/Referencias 

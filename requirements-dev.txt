@@ -1,0 +1,7 @@
+# Dependencias de desenvolvimento do Acentua.
+# Instale com:  pip install -r requirements-dev.txt
+
+-r requirements.txt
+
+pytest>=8.0          # suite de testes
+pyspellchecker>=0.8  # corpus PT-BR usado por scripts/gerar_dicionario.py

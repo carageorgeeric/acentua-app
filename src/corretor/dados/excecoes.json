@@ -1,0 +1,25 @@
+{
+  "_leia": "Overrides curados. A lista SUBSTITUI o grupo daquela chave, na ordem dada; a primeira grafia e a escolha padrao. So entra aqui o que foi verificado contra o dicionario gerado e estava errado. Chaves iniciadas por _ sao comentario.",
+
+  "_1_formas_de_tu": "O corpus e majoritariamente europeu e poe a 2a pessoa do singular na frente da forma que o brasileiro escreve.",
+  "estas": ["estas", "estás"],
+  "facas": ["facas", "faças"],
+  "iras": ["iras", "irás"],
+  "ficaras": ["ficaras", "ficarás"],
+
+  "_2_lexico_europeu": "Palavras que existem so em Portugal e vencem por frequencia.",
+  "papa": ["papa", "papá"],
+  "mama": ["mama", "mamã"],
+  "coco": ["coco", "cocô"],
+
+  "_3_moeda_justa": "Quando as duas grafias sao igualmente plausiveis, nao mexer no que o usuario digitou incomoda menos do que trocar errado.",
+  "vira": ["vira", "virá"],
+  "opera": ["opera", "ópera"],
+
+  "_4_grafia_fantasma": "O corpus conta uma grafia que quase ninguem usa de verdade, e ela poluiria o popup de alternativas.",
+  "porem": ["porém"],
+
+  "_5_faltando": "Palavras do dia a dia brasileiro que o corpus europeu nao tem.",
+  "cade": ["cadê"],
+  "ne": ["né"]
+}

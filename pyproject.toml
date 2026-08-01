@@ -1,0 +1,104 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "acentua"
+dynamic = ["version"]
+description = "Corretor de acentuacao para teclados compactos: digite sem acento, aperte Ctrl+Alt+C e o texto volta acentuado."
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "eric" }]
+keywords = [
+    "acentuação",
+    "acentuacao",
+    "português",
+    "portugues",
+    "teclado",
+    "windows",
+    "corretor",
+    "ortografia",
+    "bandeja",
+    "atalho-global",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Win32 (MS Windows)",
+    "Intended Audience :: End Users/Desktop",
+    "Natural Language :: Portuguese (Brazilian)",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Text Processing :: Linguistic",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "pynput>=1.7.6",
+    "pystray>=0.19.4",
+    "Pillow>=10.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pyspellchecker>=0.8",
+]
+
+[project.urls]
+Homepage = "https://github.com/eric/acentua"
+Codigo = "https://github.com/eric/acentua"
+Problemas = "https://github.com/eric/acentua/issues"
+Changelog = "https://github.com/eric/acentua/blob/main/CHANGELOG.md"
+
+# `acentua` abre um console junto. Para o uso normal (bandeja, sem janela)
+# prefira o atalho da area de trabalho ou `pythonw -m corretor`.
+[project.scripts]
+acentua = "corretor.app:main"
+
+# ---------------------------------------------------------------------------
+# setuptools
+# ---------------------------------------------------------------------------
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.dynamic]
+version = { attr = "corretor.VERSAO" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["corretor*"]
+
+# O dicionario e os icones PRECISAM entrar no pacote instalado. Sem isto o app
+# instala e quebra na primeira execucao procurando `dados/dicionario.json.gz`.
+# As chaves usam o pacote `corretor` (nao `corretor.dados`) de proposito: assim
+# funciona mesmo que a pasta `dados/` nao tenha `__init__.py`.
+[tool.setuptools.package-data]
+corretor = [
+    "dados/*.json.gz",
+    "dados/*.json",
+    "dados/*.ico",
+    "dados/*.png",
+    "py.typed",
+]
+
+# ---------------------------------------------------------------------------
+# pytest
+# ---------------------------------------------------------------------------
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+# Permite rodar os testes sem instalar o pacote: `pytest` puro funciona.
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-ra --color=yes"
+markers = [
+    "gui: precisa de janela/tela de verdade (nao roda no CI headless)",
+    "sistema: mexe na area de transferencia, no teclado ou no registro do Windows",
+    "lento: leva mais de um segundo (carrega o dicionario inteiro, por exemplo)",
+]
