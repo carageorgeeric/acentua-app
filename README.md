@@ -7,7 +7,7 @@
 <h1 align="center">Acentua</h1>
 
 <p align="center">
-  <strong>Digite sem acento. Aperte <code>Ctrl+Alt+C</code>. Pronto.</strong>
+  <strong>Digite sem acento. Configure um comando para acentuar suas frases e pronto!</strong>
 </p>
 
 <p align="center">
@@ -17,27 +17,6 @@
   <a href="https://github.com/eric/acentua/actions/workflows/testes.yml"><img alt="Testes" src="https://github.com/eric/acentua/actions/workflows/testes.yml/badge.svg"></a>
   <img alt="100% offline" src="https://img.shields.io/badge/dados-100%25%20offline-success.svg">
 </p>
-
-<!--
-  ┌──────────────────────────────────────────────────────────────────────────┐
-  │ FALTA O GIF DE DEMONSTRAÇÃO. Leva 2 minutos e é o que mais converte.     │
-  │                                                                          │
-  │ 1. Abra o Bloco de Notas e digite, sem acento nenhum:                    │
-  │      "amanha nao da pra ir, mas voce podia avisar a organizacao"         │
-  │ 2. Grave a tela com o ScreenToGif — https://www.screentogif.com — grátis.│
-  │ 3. No vídeo: selecione a frase, aperte Ctrl+Alt+C, mostre o texto virar. │
-  │ 4. Corte para 4 a 6 segundos, largura ~800px, salve em docs/demo.gif.    │
-  │ 5. APAGUE ESTE COMENTÁRIO e deixe só a linha da imagem, logo abaixo.     │
-  │                                                                          │
-  │ A imagem está comentada de propósito: sem o arquivo, o GitHub mostraria  │
-  │ um ícone de imagem quebrada no topo da página.                           │
-  └──────────────────────────────────────────────────────────────────────────┘
-
-<p align="center">
-  <img src="docs/demo.gif" alt="Demonstração do Acentua corrigindo uma frase" width="800">
-</p>
-
--->
 
 ---
 
@@ -56,7 +35,7 @@ O Acentua acaba com a segunda parte.
 
 1. Digite normalmente, **sem acento nenhum**, em qualquer programa.
 2. **Selecione** o texto — uma palavra, uma frase ou o parágrafo inteiro.
-3. Aperte **`Ctrl+Alt+C`**. O texto é substituído já acentuado.
+3. Aperte **`Ctrl+Alt+C`** (ou a combinação de teclas que você escolher). O texto é substituído já acentuado.
 
 Quando alguma palavra da frase é genuinamente ambígua — o `e` de "isso e bom"
 pode ser `e` ou `é` —, o Acentua pergunta antes de colar, uma palavra por vez:
