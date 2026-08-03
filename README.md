@@ -14,7 +14,7 @@
   <a href="LICENSE"><img alt="Licença MIT" src="https://img.shields.io/badge/licen%C3%A7a-MIT-green.svg"></a>
   <img alt="Python 3.11+" src="https://img.shields.io/badge/python-3.11%2B-blue.svg">
   <img alt="Windows" src="https://img.shields.io/badge/plataforma-Windows-0078D6.svg">
-  <a href="https://github.com/eric/acentua/actions/workflows/testes.yml"><img alt="Testes" src="https://github.com/eric/acentua/actions/workflows/testes.yml/badge.svg"></a>
+  <a href="https://github.com/carageorgeeric/actions/workflows/testes.yml"><img alt="Testes" src="https://github.com/carageorgeeric/acentua-app/actions/workflows/testes.yml/badge.svg"></a>
   <img alt="100% offline" src="https://img.shields.io/badge/dados-100%25%20offline-success.svg">
 </p>
 
@@ -66,7 +66,7 @@ O app fica na bandeja do sistema, ao lado do relógio. Sem janela, sem barulho.
 
 | Passo | O que fazer |
 | :---: | ----------- |
-| 1 | Baixe o projeto: **[Code → Download ZIP](https://github.com/eric/acentua/archive/refs/heads/main.zip)** |
+| 1 | Baixe o projeto: **[Code → Download ZIP](https://github.com/carageorgeeric/acentua-app/archive/refs/heads/main.zip)** |
 | 2 | Extraia o `.zip` em qualquer pasta (ex.: `C:\Acentua`) |
 | 3 | Clique duas vezes em **`INSTALAR.bat`** e espere terminar |
 | 4 | Abra o atalho **Acentua** que apareceu na área de trabalho |
